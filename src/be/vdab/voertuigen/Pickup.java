@@ -2,6 +2,7 @@ package be.vdab.voertuigen;
 
 import be.vdab.util.Laadbaar;
 import be.vdab.util.Volume;
+import be.vdab.util.VolumeException;
 
 /**
  * Created by zi08 on 10/02/2015.
@@ -20,7 +21,7 @@ public class Pickup extends Personenwagen implements Laadbaar {
     }
 
     @Override
-    public Volume getLaadvolume() {
+    public Volume getLaadvolume() throws VolumeException {
         return laadvolume;
     }
 
